@@ -1,7 +1,5 @@
 #!/usr/bin/env zsh
 
-git submodule update --init --recursive
-
 local main_dir=$zhiyuan/zsh
 
 # fzf key-bindings
