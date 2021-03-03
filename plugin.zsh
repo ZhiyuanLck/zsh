@@ -42,3 +42,10 @@ if [[ -z "${TMUX}" ]]; then
   # 恢复被覆盖的快捷键
   zvm_after_init_commands+=('source $zhiyuan/zsh/mapping.zsh')
 fi
+
+# z.lua
+eval "$(lua $zhiyuan/cli-tool/z.lua/z.lua --init zsh once enhanced)"
+alias zc='z -c'      # 严格匹配当前路径的子路径
+alias zz='z -i'      # 使用交互式选择模式
+alias zf='z -I'      # 使用 fzf 对多个结果进行选择
+alias zb='z -b'      # 快速回到父目录
