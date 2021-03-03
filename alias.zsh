@@ -41,6 +41,8 @@ alias gstd='git stash drop'
 alias gstl='git stash list'
 alias gstp='git stash pop'
 alias gsts='git stash save'
+alias gsma='git submodule add'
+alias gsmu='git submodule update --init --recursive'
 
 # ----------------------
 # Git Functions
